@@ -273,11 +273,11 @@ export class AudioEngine {
       splitter.connect(matrixGains[0]!, 0);
       matrixGains[0]!.connect(merger, 0);
       splitter.connect(matrixGains[1]!, 0);
-      matrixGains[1]!.connect(merger, 1);
+      matrixGains[1]!.connect(merger, 0, 1);
       splitter.connect(matrixGains[2]!, 1);
       matrixGains[2]!.connect(merger, 0);
       splitter.connect(matrixGains[3]!, 1);
-      matrixGains[3]!.connect(merger, 1);
+      matrixGains[3]!.connect(merger, 0, 1);
       merger.connect(separationGain).connect(gain);
     }
     source.connect(directGain).connect(gain);
