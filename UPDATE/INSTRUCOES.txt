@@ -1,0 +1,11 @@
+SILVA XVI Audio Comparer - atualização Windows
+
+Consulte "ULTIMA_VERSAO.txt" para identificar o instalador mais recente.
+Execute o instalador com essa versão no nome para atualizar. Não é necessário
+desinstalar a versão atual. Se o instalador solicitar o destino, selecione a
+mesma pasta onde o aplicativo já está instalado.
+
+Cada atualização é guardada com um número de versão diferente nesta pasta.
+Os dados do usuário são armazenados separadamente dos arquivos do aplicativo.
+Desinstalar o aplicativo não remove esta pasta; guarde-a se remover o diretório
+do projeto.

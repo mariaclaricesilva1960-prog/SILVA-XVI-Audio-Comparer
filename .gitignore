@@ -1,0 +1,6 @@
+node_modules/
+dist/
+release/
+UPDATE/*.exe
+UPDATE/*.blockmap
+.DS_Store
