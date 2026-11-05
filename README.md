@@ -25,9 +25,11 @@ Cada execução de `npm run package:win` incrementa automaticamente a versão de
 
 ## Versão PWA e GitHub Pages
 
-O mesmo app também pode ser instalado como PWA em navegadores compatíveis. O build cria ícones, manifesto e service worker para instalação e uso offline após o primeiro carregamento. Quando uma atualização é publicada, o app informa que existe nova versão e oferece o botão **Atualizar app**, evitando recarregar uma sessão sem consentimento.
+**PWA publicado:** <https://mariaclaricesilva1960-prog.github.io/SILVA-XVI-Audio-Comparer/>
 
-`npm run build:pwa` gera o site em `dist/`. O workflow `.github/workflows/pages.yml` publica automaticamente esse diretório no GitHub Pages a cada push para `main` ou `master`; cada deploy usa o commit como identificador do cache do PWA, então as alterações novas são detectadas mesmo sem trocar o número de versão do instalador Windows. Para ativar a publicação, envie este projeto a um repositório GitHub e, em **Settings > Pages**, selecione **GitHub Actions** como origem. O endereço será `https://<usuario>.github.io/<repositorio>/` (ou o domínio configurado no repositório).
+O mesmo app pode ser instalado como PWA em navegadores compatíveis. O build cria ícones, manifesto e service worker para instalação e uso offline após o primeiro carregamento. Quando uma atualização é publicada, o app informa que existe nova versão e oferece o botão **Atualizar app**, evitando recarregar uma sessão sem consentimento.
+
+`npm run build:pwa` gera o site em `dist/`. O workflow `.github/workflows/pages.yml` publica automaticamente esse diretório no GitHub Pages a cada push para `main` ou `master`; cada deploy usa o commit como identificador do cache do PWA, então as alterações novas são detectadas mesmo sem trocar o número de versão do instalador Windows.
 
 ## Fluxos disponíveis
 
