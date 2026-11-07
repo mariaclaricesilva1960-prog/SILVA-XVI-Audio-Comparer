@@ -5,6 +5,8 @@ name: Windows installer
 on:
   workflow_dispatch:
   push:
+    branches:
+      - bigfatalbear-dark-cyber-command-ui
     tags:
       - "v*"
 
