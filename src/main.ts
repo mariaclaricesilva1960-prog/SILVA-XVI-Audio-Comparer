@@ -341,7 +341,7 @@ function drawWaveform(peaks: number[]): void {
   const step = bounds.width / peaks.length;
   peaks.forEach((value, index) => {
     const height = Math.max(2, value * bounds.height * 0.88);
-    context.fillStyle = index % 8 === 0 ? "#52c9a1" : "#388f77";
+    context.fillStyle = index % 8 === 0 ? "#06b6d4" : "#0e7490";
     context.fillRect(index * step, middle - height / 2, Math.max(1, step - 1), height);
   });
 }
@@ -366,7 +366,7 @@ function drawPitchTrail(): void {
     const rowTop = segment.source === "reference" ? 6 : bounds.height / 2 + 3;
     const rowHeight = bounds.height / 2 - 12;
     const noteY = rowTop + (84 - Math.max(36, Math.min(84, segment.midi))) / 48 * rowHeight;
-    context.fillStyle = segment.source === "reference" ? "#57c394" : "#a28add";
+    context.fillStyle = segment.source === "reference" ? "#06b6d4" : "#3b82f6";
     context.globalAlpha = segment.source === "reference" ? 0.88 : 0.9;
     context.fillRect(start, noteY, Math.max(3, end - start), 5);
     if (end - start > 20) {
